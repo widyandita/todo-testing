@@ -36,8 +36,8 @@
 | ---- | ---------------------- | -------------------- |
 | 1    | Open TodoMVC           | Homepage displayed   |
 | 2    | Add "sort videos"      | Todo appears in list |
-| 3    | Add "edit pictures"    | Todo appears in list |
-| 4    | Add "post pictures"    | Todo appears in list |
+| 3    | Add "edit photos"    | Todo appears in list |
+| 4    | Add "post photos"    | Todo appears in list |
 | 5    | Add "design packaging" | Todo appears in list |
 
 ## TC003 - Complete a Todo
@@ -50,8 +50,10 @@
 | Step | Action              | Expected Result          |
 | ---- | ------------------- | ------------------------ |
 | 1    | Create four todos   | Four todos displayed     |
-| 2    | Check "sort videos" | Task marked completed    |
-| 3    | View Active filter  | Completed task is hidden |
+| 2    | Verify task count |  Four tasks verified   |
+| 3    | Check "sort videos"  | Task marked completed |
+| 4    | Verify completed task count | One task verified |
+| 4    | Verify remaining tasks count | Three tasks verified |
 
 ## TC004 - Edit Todo
 | Field            | Description     |
@@ -65,6 +67,7 @@
 | 1    | Create todos                                    | Todos displayed        |
 | 2    | Double-click "design packaging"                 | Edit mode activated    |
 | 3    | Change text to "design floorplan and packaging" | Updated text displayed |
+| 4    | Validate "design floorplan and packaging" text | Text validated |
 
 ## TC005 - Delete Todo
 | Field            | Description     |
@@ -77,6 +80,7 @@
 | ---- | -------------------------- | ------------------- |
 | 1    | Hover over "post pictures" | Delete icon appears |
 | 2    | Click Delete               | Todo removed        |
+| 3    | Verify Deletion               | Deletion verified       |
 
 ## TC006 - Clear Completed Todos
 | Field            | Description     |
@@ -85,11 +89,10 @@
 | **Feature**      | Todo Management |
 | **Priority**     | Medium          |
 
-| Field            | Description     |
-| ---------------- | --------------- |
-| **Test Case ID** | TC006           |
-| **Feature**      | Todo Management |
-| **Priority**     | Medium          |
+| Step | Action                | Expected Result        |
+| ---- | --------------------- | ---------------------- |
+| 1    | Click Clear completed | Completed todo removed |
+| 2    | Verify clear completion | Clear completion verified |
 
 ## TC007 - Verify Remaining Todo Count
 | Field            | Description     |
@@ -100,10 +103,7 @@
 
 | Step | Action                 | Expected Result           |
 | ---- | ---------------------- | ------------------------- |
-| 1    | Create four todos      | Four todos displayed      |
-| 2    | Complete one todo      | Completed count updated   |
-| 3    | Delete one active todo | Remaining count updated   |
-| 4    | Clear completed        | Remaining todos displayed |
+| 1    | Verify remaining tasks count      | Two tasks verified     |
 
 ## TC008 - Demo Failing Test
 | Field            | Description |
