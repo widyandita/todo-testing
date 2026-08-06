@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('invalid task count', async ({ page }) => {
+test('Demo - failing assertion generates Playwright artifacts', async ({ page }) => {
     await page.goto('https://todomvc.com/examples/react/dist/#/');
 
     const newTodo = page.getByTestId('text-input');

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('add, check, edit and delete to-do list', async ({ page }) => {
+test('User can manage todo items', async ({ page }) => {
     await page.goto('https://todomvc.com/examples/react/dist/#/');
 
     const newTodo = page.getByTestId('text-input');
